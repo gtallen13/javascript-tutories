@@ -3,19 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./main.css" rel="stylesheet" >
     <title>Javscript Lessons</title>
 </head>
 <body>
     <h1>Javascript Lessons</h1>
     <p>In this course we will be viewing the following topcis</p>
-    <ul>
-        <li>Introduction to JavaScript <span>+</span></li>
-        <li>Variables and Data Types <span>+</span></li>
-        <li>Functions and Scope <span>+</span></li>
-        <li>Control Structures <span>+</span></li>
-        <li>DOM Manipulation <span>+</span></li>
-        <li>Arrays and Objects <span>+</span></li>
-        <li>Working with APIs <span>+</span></li>
-    </ul>
+    <div class="container">
+        <div class="topic">
+            Introduction to JavaScript 
+            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
+            <ul class="submenu">
+                <li>What JavaScript is and how it differs from HTML & CSS</li>
+                <li>How to add JavScript to a webpage (script tag, inline, external files) </li>
+                <li>console.log() and debugging using the browser console</li>
+            </ul>
+        </div>
+    
+        <div class="topic">
+            Variables and Data Types 
+            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
+            <ul class="submenu">
+                <li>What JavaScript is and how it differs from HTML & CSS</li>
+                <li>How to add JavScript to a webpage (script tag, inline, external files) </li>
+                <li>console.log() and debugging using the browser console</li>
+            </ul>
+    
+        </div>
+        <div class="topic">Functions and Scope 
+            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
+            <ul class="submenu">
+                <li>Function declarations vs. function expressions</li>
+                <li>Parameters and return values</li>
+                <li>Scope (<code>var</code> vs. <code>let</code> vs. <code>const</code>)</li>
+            </ul>
+        </div>
+        <div class="topic">Control Structures 
+            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
+            <ul class="submenu">
+                <li>Conditional statements (<code>if</code>, <code>else</code>, <code>switch</code>)</li>
+                <li>Loops (<code>for</code>, <code>while</code>, <code>do...while</code>)</li>
+            </ul>
+        </div>
+        <div class="topic">DOM Manipulation 
+            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
+            <ul class="submenu">
+                <li><code>document.querySelector()</code>, <code>getElementById()</code></li>
+                <li>Changing text, styles, and attributes dynamically</li>
+                <li>Event listeners (<code>click</code>, <code>mouseover</code>, <code>keyup</code>)</li>
+            </ul>
+        </div>
+        <div class="topic">Arrays and Objects 
+            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
+            <ul class="submenu">
+                <li>Creating and modifying arrays (<code>push</code>, <code>pop</code>, <code>map</code>, <code>filter</code>)</li>
+                <li>Object properties and methods</li>
+                <li>Looping through arrays and objects</li>
+            </ul>
+        </div>
+        <div class="topic">Working with APIs 
+            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
+            <ul class="submenu">
+                <li><code>fetch()</code> basics</li>
+                <li>Handling JSON data</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu(button) {
+            let submenu = button.nextElementSibling
+            
+            if (submenu.style.display === "none" || submenu.style.display === ""){
+                submenu.style.display = "block"
+                button.textContent = "-"
+            }
+            else{
+                submenu.style.display = "none"
+                button.textContent = "+"
+            }
+        }
+    </script>
 </body>
 </html>
