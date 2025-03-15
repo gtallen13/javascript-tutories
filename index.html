@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./main.css" rel="stylesheet" >
-    <title>Javscript Lessons</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./main.css" rel="stylesheet">
+  <title>Collapsible Topics</title>
+  <style>
+    
+  </style>
 </head>
 <body>
-    <h1>Javascript Lessons</h1>
-    <p>In this course we will be viewing the following topcis</p>
-    <div class="container">
-        <div class="topic">
-            Introduction to JavaScript 
-            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
-            <ul class="submenu">
-                <li>What JavaScript is and how it differs from HTML & CSS</li>
-                <li>How to add JavScript to a webpage (script tag, inline, external files) </li>
-                <li>console.log() and debugging using the browser console</li>
-            </ul>
-        </div>
-    
-        <div class="topic">
-            Variables and Data Types 
-            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
-            <ul class="submenu">
-                <li>What JavaScript is and how it differs from HTML & CSS</li>
-                <li>How to add JavScript to a webpage (script tag, inline, external files) </li>
-                <li>console.log() and debugging using the browser console</li>
-            </ul>
-    
-        </div>
-        <div class="topic">Functions and Scope 
-            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
-            <ul class="submenu">
-                <li>Function declarations vs. function expressions</li>
-                <li>Parameters and return values</li>
-                <li>Scope (<code>var</code> vs. <code>let</code> vs. <code>const</code>)</li>
-            </ul>
-        </div>
-        <div class="topic">Control Structures 
-            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
-            <ul class="submenu">
-                <li>Conditional statements (<code>if</code>, <code>else</code>, <code>switch</code>)</li>
-                <li>Loops (<code>for</code>, <code>while</code>, <code>do...while</code>)</li>
-            </ul>
-        </div>
-        <div class="topic">DOM Manipulation 
-            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
-            <ul class="submenu">
-                <li><code>document.querySelector()</code>, <code>getElementById()</code></li>
-                <li>Changing text, styles, and attributes dynamically</li>
-                <li>Event listeners (<code>click</code>, <code>mouseover</code>, <code>keyup</code>)</li>
-            </ul>
-        </div>
-        <div class="topic">Arrays and Objects 
-            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
-            <ul class="submenu">
-                <li>Creating and modifying arrays (<code>push</code>, <code>pop</code>, <code>map</code>, <code>filter</code>)</li>
-                <li>Object properties and methods</li>
-                <li>Looping through arrays and objects</li>
-            </ul>
-        </div>
-        <div class="topic">Working with APIs 
-            <button class="toggle-btn" onclick="toggleMenu(this)">+</button>
-            <ul class="submenu">
-                <li><code>fetch()</code> basics</li>
-                <li>Handling JSON data</li>
-            </ul>
+  <header>
+    <h1>Explore Topics</h1>
+  </header>
+  <div class="container">
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic(this)">
+        <h2>Introduction to JS</h2>
+        <span class="arrow">▼</span>
+      </div>
+        <div class="topic-content">
+            <li>What JavaScript is and how it differs from HTML & CSS</li>
+            <li>How to add JavaScript to a webpage (<code>&lt;script&gt;</code> tag, inline, external files)</li>
+            <li><code>console.log()</code> and debugging using the browser console</li>
         </div>
     </div>
 
-    <script>
-        function toggleMenu(button) {
-            let submenu = button.nextElementSibling
-            
-            if (submenu.style.display === "none" || submenu.style.display === ""){
-                submenu.style.display = "block"
-                button.textContent = "-"
-            }
-            else{
-                submenu.style.display = "none"
-                button.textContent = "+"
-            }
-        }
-    </script>
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic(this)">
+        <h2>Variables and Data Types</h2>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="topic-content">
+        <li><code>var</code>, <code>let</code>, <code>const</code></li>
+        <li>Primitive data types: <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code></li>
+        <li>Basic operations (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>)</li>
+      </div>
+    </div>
+
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic(this)">
+        <h2>Functions and Scope</h2>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="topic-content">
+        <li>Function declarations vs. function expressions</li>
+        <li>Parameters and return values</li>
+        <li>Scope (<code>var</code> vs. <code>let</code> vs. <code>const</code>)</li>
+      </div>
+    </div>
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic(this)">
+        <h2>Control Structures</h2>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="topic-content">
+        <li>Conditional statements (<code>if</code>, <code>else</code>, <code>switch</code>)</li>
+        <li>Loops (<code>for</code>, <code>while</code>, <code>do...while</code>)</li>
+      </div>
+    </div>
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic(this)">
+        <h2>DOM Manipulation</h2>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="topic-content">
+        <li><code>document.querySelector()</code>, <code>getElementById()</code></li>
+        <li>Changing text, styles, and attributes dynamically</li>
+        <li>Event listeners (<code>click</code>, <code>mouseover</code>, <code>keyup</code>)</li>
+      </div>
+    </div>
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic(this)">
+        <h2>Arrays and Objects</h2>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="topic-content">
+        <li>Creating and modifying arrays (<code>push</code>, <code>pop</code>, <code>map</code>, <code>filter</code>)</li>
+        <li>Object properties and methods</li>
+        <li>Looping through arrays and objects</li>
+      </div>
+    </div>
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic(this)">
+        <h2>Working with APIs (Optional but Useful)</h2>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="topic-content">
+        <li><code>fetch()</code> basics</li>
+        <li>Handling JSON data</li>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script>
+    function toggleTopic(header) {
+        console.log("5" + 3);
+        
+      const topic = header.parentElement;
+      topic.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
