@@ -1,0 +1,67 @@
+lesson 1 recap
+
+logging to console
+variables
+operations
+template strings
+getting input from user
+
+
+Lesson 2
+logging input from user in console
+    what is the type
+    How to convert inputs
+
+What is a function?
+reusable blocks of code that perform a specific task, taking some form of input and returning an output
+
+
+Why use functions? (Code reusability, readability, maintainability)
+
+
+Function syntax
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet("Alice"));
+
+
+What are parameters?
+Why use parameters?
+How to use parameters?
+return values?
+Using functions
+
+https://www.geeksforgeeks.org/javascript-function-definitions/
+
+
+Exercises
+
+1. Declare a function, call it and show the retun value on screen
+2. Ask the users name using a function and then display their name on the console
+3. Create a function for each arithmetic operation, send 2 numbers as parameters and calculate the result
+4. Invoice function
+    Create a programa that receives a product name, the price, and amount. With this information calculate the subtotal.
+    Send the subtotal to a functions that will calculate the total (total = subtutotal + tax - discount).
+    REQUIREMENTS
+    The tax % should be a global constant variable
+    The tax should be calculated inside a function called calculateTax receiving as parameter subtotal (tax = subtotal*tax)
+    The total should be calculated in a function called calculateTotal receiving parameters (subtotal, tax)
+
+Control structure
+if, else, else if
+comparison operators 
+    Difference between == (Compares values) and === (Compares values and type)
+    && and ||
+
+Use if statements to compare 5 and "5" using == and ===
+Use if statements to compare strings (two names one uppercase and lowercase)
+Create a menu using if statement 
+    1. Write my name 
+    2. Compare two value
+    3 Calculate the sum of 2 numbers
+
+
+
+
+    
