@@ -16,26 +16,26 @@ Variables and data types
 -basic operations
 -Check data types typeof 
 
-
+""
 
 exercises
--Display a message on console
--Define a const variable and display it to console
--Define a variable with an initial value and display it to console. Then change the value of the variable and display it to console
--Define 2 numbers and do the basic arithmetic operations with them
--Do arithmetic operations with 2 numbers and display their result like this:
-    "The result of the operation addition is 56" (repeat for each operation)"
+-Display a message on console DONE
+-Define a const variable and display it to console DONE 
+-Define a variable with an initial value and display it to console. Then change the value of the variable and display it to console DONE
+-Define 2 numbers and do the basic arithmetic operations with them DONE
+-Do arithmetic operations with 2 numbers and display their result like this: DONE
+    "The result of the addition is 56" (repeat for each operation)" 
 
 Fix the errors
 
-Error 1
+Error 1 DONE
 let num1 = 10
 let num2 = "5";
 let sum = num1 + num2;
 console.log(Sum); // Error here
 
 
-Error 2
+Error 2 DONE
 let num1 =1
 let num2 = 10
 const result = num1 + 10
@@ -45,7 +45,7 @@ result = num1 / num2
 
 console.log(result);
 
-Error 3
+Error 3 DONE
 let MyName;
 console.log(`Hello its nice to meet you, ${MyName}`);
         
