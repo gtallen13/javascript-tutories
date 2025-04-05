@@ -7,6 +7,20 @@ template strings
 getting input from user
 
 
+*Exercises all with user input*
+1. Convert lempiras to dollars (1 dollar = L. 25.48)
+    Ask the user to input the amount of lempiras and then convert that amount from lempiras to dollars.
+    In the console you must clearly display to the user the amount they entered, the current 
+    rate of the dollar and the the result of the conversion.
+2. Convert feet to meters (1ft = 0.3048 m)
+    Ask the user to input the amount of lempiras and then convert that amount from feet to meters.
+    In the console you must clearly display to the user the amount they entered, the current 
+    and the the result of the conversion.
+3. Calculate the area of a triangle (A = (height*base)/2 )
+    Ask the user to enter the height and base of the triangle.
+    You must clearly show the user their input and the area of the triangle.
+
+
 Lesson 2
 logging input from user in console
     what is the type
